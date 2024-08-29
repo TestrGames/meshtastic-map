@@ -171,7 +171,7 @@ const mqttBrokerUrl = options["mqtt-broker-url"] ?? "mqtt://mqtt.meshtastic.org"
 const mqttUsername = options["mqtt-username"] ?? "meshdev";
 const mqttPassword = options["mqtt-password"] ?? "large4cats";
 const mqttClientId = options["mqtt-client-id"] ?? null;
-const mqttTopics = options["mqtt-topic"] ?? ["msh/#"];
+const mqttTopics = options["mqtt-topic"] ?? ["msh/CZ/#"];
 const collectServiceEnvelopes = options["collect-service-envelopes"] ?? false;
 const collectPositions = options["collect-positions"] ?? true;
 const collectTextMessages = options["collect-text-messages"] ?? false;
@@ -180,7 +180,7 @@ const collectWaypoints = options["collect-waypoints"] ?? true;
 const collectNeighbourInfo = options["collect-neighbour-info"] ?? false;
 const collectMapReports = options["collect-map-reports"] ?? true;
 const decryptionKeys = options["decryption-keys"] ?? [
-    "1PG7OiApB1nwvP+rz05pAQ==", // add default "AQ==" decryption key
+    "AQ==", // add default "AQ==" decryption key
 ];
 const purgeIntervalSeconds = options["purge-interval-seconds"] ?? 10;
 const purgeNodesUnheardForSeconds = options["purge-nodes-unheard-for-seconds"] ?? null;
